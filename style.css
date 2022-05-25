@@ -328,7 +328,12 @@ padding-top: 1rem;
 /* Mobile */
 @media screen and (max-width:992px){
   
-
+    body{
+        width: 100vw;
+        max-width: 100%;
+        max-height: 100%; 
+        scroll-behavior: smooth;
+      }
     
 /* Navbar */
 /* Hero */
@@ -364,8 +369,6 @@ opacity: 0.7;
   }
   
   .about__container h2{
-
-
   color:white;
    font-size: 2rem;
 width:300px;
@@ -396,11 +399,7 @@ text-align: center;
       align-items: center;
   }
 
-  .info img:hover {
-transform: scale(1.1);
-  transition:.8s;
-  cursor: pointer;
-  }
+ 
  .info a {
       text-decoration: none;
            border-radius: 5rem;
@@ -420,10 +419,7 @@ transform: scale(1.1);
     
     }
     
-    .info a:hover { 
-      transform: scale(1.1);
-      transition:.8s;
-    }
+
 
     .production-container{
       display: flex; 
@@ -524,6 +520,8 @@ width: 100%;
     background-color: var(--negromate);
     margin-top: 2rem;
     height: 800px;
+    width: 100vw;
+  
 }
 .social-media h2{
     color: var(--amarillo);
@@ -538,8 +536,8 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    margin-top: 13rem;
+    gap: 5rem;
+    margin-top: 15rem;
     height: 200px;
 
 }
@@ -550,16 +548,7 @@ width: 100%;
 .social-media_container .spotify{
     width:155px;
 }
-.social-media img:hover{
-    transform: scale(1.1);
-        transition:.8s;
-        cursor: pointer;
-}
-.spotify:hover{
-    transform: scale(1.1);
-        transition:.8s;
-        cursor: pointer;
-}
+
 /* Footer */
 .footer{
     background-color: var(--blanco);
@@ -598,6 +587,7 @@ justify-content: center;
 align-items: center;
 width: 250px;
     text-align: center;
+    margin-top: 2rem;
 
 }
 .copyright{
