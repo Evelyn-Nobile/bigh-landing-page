@@ -336,6 +336,38 @@ padding-top: 1rem;
       }
     
 /* Navbar */
+.navbar{
+    height: 50x;
+}
+.menu-btn div{
+    height: 5px;
+    width: 35px;
+    margin: 5px;
+    background-color: var(--negromate);
+    border-radius: 0.375rem;
+ 
+    }
+    
+    .menu-toggle {
+        display: none;
+      }
+      
+      .navbar__items {
+        display: none;
+        text-align: center;
+      width: 150px;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 7px;
+        
+      }
+      
+     
+      
+      .menu-toggle:checked ~ .navbar__items {
+        display: block;
+      }
+  
 /* Hero */
 .hero{
     width: 100%;
