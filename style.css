@@ -459,6 +459,8 @@ width: 100%;
 }
 .beats iframe{
     width: 250px;
+    justify-content: center;
+    align-items: center;
 }
 /* Contact */
 .contacto h2{
@@ -520,7 +522,7 @@ width: 100%;
     background-color: var(--negromate);
     margin-top: 2rem;
     height: 800px;
-    width: 100vw;
+    width: 100%;
   
 }
 .social-media h2{
@@ -529,6 +531,7 @@ width: 100%;
     font-size: 2rem;
     padding-top: 2rem;
     text-align: center;
+    width: 95%;
 }
 .social-media_container{
     width: 100%;
