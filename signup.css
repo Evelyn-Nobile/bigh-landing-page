@@ -12,7 +12,6 @@ scroll-behavior: smooth;
     font-weight: 100;
     display: flex;
     background-color: black;
-
   }
 
 .form-container img{
@@ -25,26 +24,25 @@ scroll-behavior: smooth;
     align-items: center;
     width: 100%;
     gap: 2rem;
+   
 }
 
-.login-form{
+.signup-form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
-
-}
-.form-container h3{
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 2rem;
+   
 
 }
 
-.login-form input{
+
+.signup-form input{
     height: 2rem;
     text-transform: uppercase;
     color: white;
+    width: 25rem;
  
   
   
@@ -70,7 +68,7 @@ input::placeholder {
   color: #ffff2b;
     
     }
-    .login-submit {
+    .signup-submit {
     border: 1px solid white;
     background: transparent;
     color: white;
@@ -83,11 +81,11 @@ input::placeholder {
 
 }
 
-.login-submit:hover{
+.signup-submit:hover{
     transform: scale(0.9);
     transition: all ease 0.8;
 }
-.login-username, .login-password{
+.sign-username, .sign-password ,.sign-email{
     border: none;
 	background-color: transparent;
 	border-bottom: 1px solid white;
@@ -97,28 +95,20 @@ input::placeholder {
 }
 
 @media screen and (max-width:481px){
-  
     body{
         width: 100vw;
         max-width: 100%;
         max-height: 100%; 
         font-family: 'Bree Serif', serif;
-    font-weight: 100;
-    display: flex;
-    overflow: hidden;
-    background-color: black;
-      }
+        font-weight: 100;
+        display: flex;
+        overflow: hidden;
+        background-color: black;
+      }  
       .form-container img{
         height: 250px;
     }
-      .form-container h3{
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: white;
-        margin-bottom: 2rem;
-        text-align: center;
-    
-    }
+  
       .form-container{
         display: flex;
         flex-direction: column;
@@ -129,22 +119,26 @@ input::placeholder {
         
     }
     
-    .login-form{
+    .signup-form{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2rem;
+       
     
     }
     
-    .login-form input{
+    .sign-form input{
         height: 2rem;
         text-transform: uppercase;
+        
       
       
     }
-   
+    .signup-form input:focus{
+        color: #ffff2b;    
+    }
     .form-text{
         display: flex;
         flex-direction: column;
@@ -155,7 +149,7 @@ input::placeholder {
     .form-text a{
         text-decoration: none;
         color: white;
-        
+     
     
     }
     
@@ -163,25 +157,27 @@ input::placeholder {
       color: #ffff2b;
         
         }
-        .login-submit {
+        .signup-submit {
         border: 1px solid white;
         background: transparent;
-        color: white;
-       cursor: pointer;
+        color: white;           
         margin: 1rem auto;
         padding: 0.5rem;
         width: 10rem;
+        cursor: pointer;
         box-shadow: 2px 0px 4px 0px white;
-
-    }   
-    .login-username, .login-password{
+    
+    } 
+    .sign-username, .sign-password, .sign-email{
         border: none;
         background-color: transparent;
         border-bottom: 1px solid white;
-   
+        
         outline: none;
     }
-    }
+}
+
+    
 
     @media screen and (max-width:992px){
         body{
@@ -197,14 +193,7 @@ input::placeholder {
           .form-container img{
             height: 250px;
         }
-          .form-container h3{
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: white;
-            margin-bottom: 2rem;
-            text-align: center;
-        
-        }
+      
           .form-container{
             display: flex;
             flex-direction: column;
@@ -215,7 +204,7 @@ input::placeholder {
             
         }
         
-        .login-form{
+        .signup-form{
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -225,14 +214,14 @@ input::placeholder {
         
         }
         
-        .login-form input{
+        .sign-form input{
             height: 2rem;
             text-transform: uppercase;
             
           
           
         }
-        .login-form input:focus{
+        .signup-form input:focus{
             color: #ffff2b;    
         }
         .form-text{
@@ -253,7 +242,7 @@ input::placeholder {
           color: #ffff2b;
             
             }
-            .login-submit {
+            .signup-submit {
             border: 1px solid white;
             background: transparent;
             color: white;           
@@ -264,7 +253,7 @@ input::placeholder {
             box-shadow: 2px 0px 4px 0px white;
         
         } 
-        .login-username, .login-password{
+        .sign-username, .sign-password, .sign-email{
             border: none;
             background-color: transparent;
             border-bottom: 1px solid white;
